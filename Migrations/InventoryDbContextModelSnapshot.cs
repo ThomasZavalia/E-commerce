@@ -37,7 +37,7 @@ namespace ExperimentoAPI.Migrations
 
                     b.HasIndex("UsuarioId");
 
-                    b.ToTable("carritos");
+                    b.ToTable("carritos", (string)null);
                 });
 
             modelBuilder.Entity("ExperimentoAPI.Models.CarritoDetalle", b =>
@@ -63,7 +63,7 @@ namespace ExperimentoAPI.Migrations
 
                     b.HasIndex("ProductoId");
 
-                    b.ToTable("CarritoDetalles");
+                    b.ToTable("CarritoDetalles", (string)null);
                 });
 
             modelBuilder.Entity("ExperimentoAPI.Models.Categoria", b =>
@@ -84,7 +84,7 @@ namespace ExperimentoAPI.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("categorias");
+                    b.ToTable("categorias", (string)null);
                 });
 
             modelBuilder.Entity("ExperimentoAPI.Models.Consumidor", b =>
@@ -113,7 +113,7 @@ namespace ExperimentoAPI.Migrations
 
                     b.HasIndex("idRol");
 
-                    b.ToTable("Consumidor");
+                    b.ToTable("Consumidor", (string)null);
                 });
 
             modelBuilder.Entity("ExperimentoAPI.Models.DetalleVenta", b =>
@@ -147,7 +147,7 @@ namespace ExperimentoAPI.Migrations
 
                     b.HasIndex("ventaId");
 
-                    b.ToTable("detallesVenta");
+                    b.ToTable("detallesVenta", (string)null);
                 });
 
             modelBuilder.Entity("ExperimentoAPI.Models.Producto", b =>
@@ -198,7 +198,7 @@ namespace ExperimentoAPI.Migrations
 
                     b.HasIndex("idCategoria");
 
-                    b.ToTable("productos2");
+                    b.ToTable("productos2", (string)null);
                 });
 
             modelBuilder.Entity("ExperimentoAPI.Models.Rol", b =>
@@ -215,7 +215,7 @@ namespace ExperimentoAPI.Migrations
 
                     b.HasKey("id");
 
-                    b.ToTable("roles");
+                    b.ToTable("roles", (string)null);
 
                     b.HasData(
                         new
@@ -248,7 +248,7 @@ namespace ExperimentoAPI.Migrations
 
                     b.HasKey("id");
 
-                    b.ToTable("usuarios");
+                    b.ToTable("usuarios", (string)null);
                 });
 
             modelBuilder.Entity("ExperimentoAPI.Models.Venta", b =>
@@ -270,7 +270,7 @@ namespace ExperimentoAPI.Migrations
 
                     b.HasKey("id");
 
-                    b.ToTable("ventas");
+                    b.ToTable("ventas", (string)null);
                 });
 
             modelBuilder.Entity("ExperimentoAPI.Models.Carrito", b =>

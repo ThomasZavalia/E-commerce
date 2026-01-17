@@ -5,6 +5,9 @@
 *.userosscache
 *.sln.docstates
 
+appsettings.Development.json
+appsettings.Local.json
+
 # Build results
 [Dd]ebug/
 [Rr]elease/

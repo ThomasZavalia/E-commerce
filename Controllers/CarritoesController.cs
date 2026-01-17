@@ -101,7 +101,7 @@ namespace ExperimentoAPI.Controllers
 
             if (detalleExistente != null)
             {
-                detalleExistente.cantidad += request.Cantidad; // Suma la cantidad
+                detalleExistente.cantidad += request.Cantidad; 
             }
             else
             {

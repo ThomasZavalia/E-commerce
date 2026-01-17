@@ -15,12 +15,12 @@ namespace ExperimentoAPI.Controllers
 {
     [Route("api/auth")]
     [ApiController]
-    public class ValuesController : ControllerBase
+    public class AuthController : ControllerBase
     {
         private readonly InventoryDbContext _context;
         private readonly IConfiguration _configuration;
 
-        public ValuesController(InventoryDbContext context, IConfiguration configuration)
+        public AuthController(InventoryDbContext context, IConfiguration configuration)
         {
             _context = context;
             _configuration = configuration;
